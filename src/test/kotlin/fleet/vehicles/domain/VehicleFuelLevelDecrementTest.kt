@@ -2,9 +2,9 @@ package fleet.vehicles.domain
 
 import shared.domain.mothers.IntegerMother
 import fleet.vehicles.domain.mothers.VehicleMother
-import kotlin.test.Test
-import kotlin.test.assertEquals
-import kotlin.test.assertFailsWith
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.assertThrows
 
 internal class VehicleFuelLevelDecrementTest {
     @Test
@@ -40,7 +40,7 @@ internal class VehicleFuelLevelDecrementTest {
             VehicleFuelLevel(fuelIncrement - 1)
         )
 
-        assertFailsWith<VehicleFuelLevelIllegalArgumentException> {
+        assertThrows<VehicleFuelLevelIllegalArgumentException> {
             vehicle.decrementFuelLevelBy(VehicleFuelLevel(fuelIncrement))
         }
     }
@@ -50,7 +50,7 @@ internal class VehicleFuelLevelDecrementTest {
         val negativeValue = IntegerMother.createNegative()
         val vehicle = VehicleMother.create()
 
-        assertFailsWith<VehicleFuelLevelIllegalArgumentException> {
+        assertThrows<VehicleFuelLevelIllegalArgumentException> {
             vehicle.decrementFuelLevelBy(VehicleFuelLevel(negativeValue))
         }
     }

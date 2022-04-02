@@ -1,18 +1,19 @@
 package fleet.vehicles.domain
 
+import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.assertThrows
 import shared.domain.mothers.StringMother
 import shared.domain.StringTestTool
-import kotlin.test.Test
-import kotlin.test.assertFailsWith
 
 internal class VehicleCategoryStringAssignationTest {
+
     @Test
     fun it_should_throw_an_exception_for_strings_longer_than_4() {
         val minLength = 5
         val maxLength = (minLength..256).random()
         val categoryString = StringMother.createLatinAlphanumeric(5, maxLength)
 
-        assertFailsWith<VehicleCategoryStringMalformedException> {
+        assertThrows<VehicleCategoryStringMalformedException> {
             VehicleCategoryString(categoryString)
         }
     }
@@ -22,7 +23,7 @@ internal class VehicleCategoryStringAssignationTest {
         val stringLength = 4
         val categoryString = StringMother.createNonAlphanumeric(stringLength)
 
-        assertFailsWith<VehicleCategoryStringMalformedException> {
+        assertThrows<VehicleCategoryStringMalformedException> {
             VehicleCategoryString(categoryString)
         }
     }
@@ -52,7 +53,7 @@ internal class VehicleCategoryStringAssignationTest {
 
         val codeString = "" + code1Char + code2Char + code3Char + code4char
 
-        assertFailsWith<VehicleCategoryStringBadCodeException> {
+        assertThrows<VehicleCategoryStringBadCodeException> {
             VehicleCategoryString(codeString)
         }
     }

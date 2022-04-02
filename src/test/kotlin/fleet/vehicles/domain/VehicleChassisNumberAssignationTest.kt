@@ -1,10 +1,11 @@
 package fleet.vehicles.domain
 
+import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.assertThrows
 import shared.domain.mothers.StringMother
-import kotlin.test.Test
-import kotlin.test.assertFailsWith
 
 class VehicleChassisNumberAssignationTest {
+
     @Test
     fun it_should_accept_latin_alphanumeric_17_chars_long_value() {
         val stringLength = 17
@@ -17,7 +18,7 @@ class VehicleChassisNumberAssignationTest {
         val stringLength = 16
         val chassisNumber = StringMother.createLatinAlphanumeric(stringLength)
 
-        assertFailsWith<VehicleChassisNumberMalformedException> {
+        assertThrows<VehicleChassisNumberMalformedException> {
             VehicleChassisNumber(chassisNumber)
         }
     }
@@ -27,7 +28,7 @@ class VehicleChassisNumberAssignationTest {
         val stringLength = 18
         val chassisNumber = StringMother.createLatinAlphanumeric(stringLength)
 
-        assertFailsWith<VehicleChassisNumberMalformedException> {
+        assertThrows<VehicleChassisNumberMalformedException> {
             VehicleChassisNumber(chassisNumber)
         }
     }
@@ -36,7 +37,7 @@ class VehicleChassisNumberAssignationTest {
     fun it_should_throw_exception_for_non_latin_alphanumeric_value() {
         val nonAlphanumericString = "!@#$%^&*()_+{}|?'"
 
-        assertFailsWith<VehicleChassisNumberMalformedException> {
+        assertThrows<VehicleChassisNumberMalformedException> {
             VehicleChassisNumber(nonAlphanumericString)
         }
     }

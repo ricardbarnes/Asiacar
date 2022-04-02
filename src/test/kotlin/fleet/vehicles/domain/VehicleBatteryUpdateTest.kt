@@ -2,11 +2,12 @@ package fleet.vehicles.domain
 
 import shared.domain.mothers.IntegerMother
 import fleet.vehicles.domain.mothers.VehicleMother
-import kotlin.test.Test
-import kotlin.test.assertEquals
-import kotlin.test.assertFailsWith
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.assertThrows
 
 internal class VehicleBatteryUpdateTest {
+
     @Test
     fun it_should_update_the_battery_with_a_positive_number() {
         val value = IntegerMother.createPositive(true)
@@ -22,7 +23,7 @@ internal class VehicleBatteryUpdateTest {
         val value = IntegerMother.createNegative()
         val vehicle = VehicleMother.create()
 
-        assertFailsWith<VehicleBatteryLevelIllegalArgumentException> {
+        assertThrows<VehicleBatteryLevelIllegalArgumentException> {
             vehicle.updateBatteryLevel(VehicleBatteryLevel(value))
         }
     }

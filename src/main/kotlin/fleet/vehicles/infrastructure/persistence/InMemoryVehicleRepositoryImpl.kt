@@ -4,16 +4,21 @@ import fleet.vehicles.domain.Vehicle
 import fleet.vehicles.domain.VehicleChassisNumber
 import fleet.vehicles.domain.VehicleRepository
 
-class VehicleRepositoryImpl : VehicleRepository {
+class InMemoryVehicleRepositoryImpl : VehicleRepository {
+
+    companion object {
+        val vehicles: MutableList<Vehicle> = mutableListOf()
+    }
+
     override fun search(chassisNumber: VehicleChassisNumber): Vehicle? {
-        TODO("Not yet implemented")
+        return vehicles.firstOrNull { it.getChassisNumber() == chassisNumber }
     }
 
     override fun save(vehicle: Vehicle) {
-        TODO("Not yet implemented")
+        vehicles.add(vehicle)
     }
 
     override fun delete(vehicle: Vehicle) {
-        TODO("Not yet implemented")
+        vehicles.remove(vehicle)
     }
 }

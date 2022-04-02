@@ -1,8 +1,8 @@
 package fleet.vehicles.domain
 
+import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.assertThrows
 import shared.domain.mothers.StringMother
-import kotlin.test.Test
-import kotlin.test.assertFailsWith
 
 internal class VehicleLicensePlateAssignationTest {
     @Test
@@ -15,7 +15,7 @@ internal class VehicleLicensePlateAssignationTest {
     fun it_should_throw_an_exception_for_a_non_latin_alphanumeric_value() {
         val value = StringMother.createNonAlphanumeric()
 
-        assertFailsWith<VehicleLicensePlateMalformedException> {
+        assertThrows<VehicleLicensePlateMalformedException> {
             VehicleLicensePlate(value)
         }
     }
