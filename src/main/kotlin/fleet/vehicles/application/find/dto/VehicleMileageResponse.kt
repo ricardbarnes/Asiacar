@@ -1,4 +1,4 @@
-package fleet.vehicles.application.find
+package fleet.vehicles.application.find.dto
 
 import shared.domain.bus.query.Response
 

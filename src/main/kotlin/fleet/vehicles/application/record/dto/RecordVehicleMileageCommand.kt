@@ -1,4 +1,4 @@
-package fleet.vehicles.application.record
+package fleet.vehicles.application.record.dto
 
 import shared.domain.bus.command.Command
 

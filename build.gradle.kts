@@ -14,6 +14,8 @@ repositories {
 
 dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
+    testImplementation("org.mockito:mockito-junit-jupiter:4.4.0")
+    implementation("org.springframework:spring-context:5.3.18")
 }
 
 tasks.test {

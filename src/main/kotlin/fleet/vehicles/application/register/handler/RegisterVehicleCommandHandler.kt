@@ -1,5 +1,7 @@
-package fleet.vehicles.application.register
+package fleet.vehicles.application.register.handler
 
+import fleet.vehicles.application.register.VehicleRegistrar
+import fleet.vehicles.application.register.dto.RegisterVehicleCommand
 import fleet.vehicles.domain.VehicleId
 import shared.domain.bus.command.CommandHandler
 import fleet.vehicles.domain.*

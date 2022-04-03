@@ -1,7 +1,7 @@
 package controllers.fleet.vehicles.register
 
 import shared.domain.bus.command.CommandBus
-import fleet.vehicles.application.register.RegisterVehicleCommand
+import fleet.vehicles.application.register.dto.RegisterVehicleCommand
 
 class VehicleRegistrarController(private val commandBus: CommandBus) {
     fun main(

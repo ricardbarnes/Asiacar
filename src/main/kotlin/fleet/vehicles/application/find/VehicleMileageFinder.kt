@@ -1,6 +1,7 @@
 package fleet.vehicles.application.find
 
 import fleet.vehicles.application.VehicleChassisNumberNotFoundException
+import fleet.vehicles.application.find.dto.VehicleMileageResponse
 import fleet.vehicles.domain.VehicleChassisNumber
 import fleet.vehicles.domain.VehicleRepository
 

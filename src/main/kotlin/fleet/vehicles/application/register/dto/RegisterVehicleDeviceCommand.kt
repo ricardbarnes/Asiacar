@@ -1,4 +1,4 @@
-package fleet.vehicles.application.register
+package fleet.vehicles.application.register.dto
 
 import shared.domain.bus.command.Command
 

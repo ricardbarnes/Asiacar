@@ -1,7 +1,7 @@
 package controllers.fleet.vehicles.record
 
 import shared.domain.bus.command.CommandBus
-import fleet.vehicles.application.record.RecordVehicleMileageCommand
+import fleet.vehicles.application.record.dto.RecordVehicleMileageCommand
 
 class VehicleMileageRecorderController(private val commandBus: CommandBus) {
     fun main(rawChassisNumber: String, rawMileage: Int) {

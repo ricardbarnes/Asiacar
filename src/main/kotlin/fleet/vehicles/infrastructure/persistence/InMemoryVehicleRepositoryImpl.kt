@@ -3,7 +3,9 @@ package fleet.vehicles.infrastructure.persistence
 import fleet.vehicles.domain.Vehicle
 import fleet.vehicles.domain.VehicleChassisNumber
 import fleet.vehicles.domain.VehicleRepository
+import org.springframework.stereotype.Repository
 
+@Repository
 class InMemoryVehicleRepositoryImpl : VehicleRepository {
 
     companion object {
