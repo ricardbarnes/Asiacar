@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fleet.vehicles.domain.VehicleLicensePlateAssignationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-04-03T16:55:44" hostname="WMACBCN069029.local" time="0.009">
+  <properties/>
+  <testcase name="it_should_accept_a_latin_alphanumeric_value()" classname="fleet.vehicles.domain.VehicleLicensePlateAssignationTest" time="0.003"/>
+  <testcase name="it_should_throw_an_exception_for_a_non_latin_alphanumeric_value()" classname="fleet.vehicles.domain.VehicleLicensePlateAssignationTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

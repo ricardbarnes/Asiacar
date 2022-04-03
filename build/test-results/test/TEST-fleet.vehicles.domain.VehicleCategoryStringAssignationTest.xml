@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fleet.vehicles.domain.VehicleCategoryStringAssignationTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-04-03T16:55:44" hostname="WMACBCN069029.local" time="0.009">
+  <properties/>
+  <testcase name="it_should_throw_an_exception_for_non_latin_alphanumeric_strings()" classname="fleet.vehicles.domain.VehicleCategoryStringAssignationTest" time="0.003"/>
+  <testcase name="it_should_throw_an_exception_for_strings_longer_than_4()" classname="fleet.vehicles.domain.VehicleCategoryStringAssignationTest" time="0.002"/>
+  <testcase name="it_should_throw_exception_for_non_acriss_code_formats()" classname="fleet.vehicles.domain.VehicleCategoryStringAssignationTest" time="0.001"/>
+  <testcase name="it_should_accept_acriss_code_format()" classname="fleet.vehicles.domain.VehicleCategoryStringAssignationTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

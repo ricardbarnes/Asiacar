@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fleet.vehicles.domain.VehicleChassisNumberAssignationTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-04-03T16:55:44" hostname="WMACBCN069029.local" time="0.005">
+  <properties/>
+  <testcase name="it_should_throw_exception_for_less_than_17_chars_long_value()" classname="fleet.vehicles.domain.VehicleChassisNumberAssignationTest" time="0.001"/>
+  <testcase name="it_should_throw_exception_for_more_than_17_chars_long_value()" classname="fleet.vehicles.domain.VehicleChassisNumberAssignationTest" time="0.001"/>
+  <testcase name="it_should_accept_latin_alphanumeric_17_chars_long_value()" classname="fleet.vehicles.domain.VehicleChassisNumberAssignationTest" time="0.001"/>
+  <testcase name="it_should_throw_exception_for_non_latin_alphanumeric_value()" classname="fleet.vehicles.domain.VehicleChassisNumberAssignationTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

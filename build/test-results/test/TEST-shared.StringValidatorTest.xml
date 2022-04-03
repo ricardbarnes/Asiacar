@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="shared.StringValidatorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-04-03T16:55:43" hostname="WMACBCN069029.local" time="0.043">
+  <properties/>
+  <testcase name="is_alphanumeric_method_should_return_true_for_a_latin_alphanumeric_string()" classname="shared.StringValidatorTest" time="0.04"/>
+  <testcase name="is_alphanumeric_method_should_return_false_for_a_non_latin_alphanumeric_string()" classname="shared.StringValidatorTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

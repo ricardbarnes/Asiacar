@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fleet.vehicles.domain.VehicleFuelLevelIncrementTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-04-03T16:55:44" hostname="WMACBCN069029.local" time="0.012">
+  <properties/>
+  <testcase name="it_should_accept_a_positive_value()" classname="fleet.vehicles.domain.VehicleFuelLevelIncrementTest" time="0.002"/>
+  <testcase name="it_should_throw_an_exception_for_negative_values()" classname="fleet.vehicles.domain.VehicleFuelLevelIncrementTest" time="0.002"/>
+  <testcase name="it_should_sum_the_old_and_the_new_values()" classname="fleet.vehicles.domain.VehicleFuelLevelIncrementTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
